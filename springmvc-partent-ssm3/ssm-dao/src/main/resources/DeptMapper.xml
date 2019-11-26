@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.DeptDao">
+    <!--    这是mybatis框架-->
+
+    <resultMap id="getResultMap" type="com.entity.DeptEntity">
+        <id column="id" property="id"/>
+        <result property="deptname" column="deptname"/>
+        <result property="birthday" column="birthday"/>
+    </resultMap>
+    <select id="getPageHelper" resultMap="getResultMap">
+        select id,deptname,birthday from dept order by id
+    </select>
+    <insert id="getInsert">
+        insert into dept(deptname, birthday) values(#{deptname},#{birthday})
+    </insert>
+</mapper>
