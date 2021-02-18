@@ -36,7 +36,7 @@
         <logback.version>1.2.3</logback.version>
         <servlet.version>3.1.0</servlet.version>
         <hibernate-version>6.0.16.Final</hibernate-version>
-        <jackson.version>2.10.1</jackson.version>
+        <jackson.version>2.10.5.1</jackson.version>
         <vue.version>2.6.10</vue.version>
         <jquery.version>3.2.1</jquery.version>
     </properties>
